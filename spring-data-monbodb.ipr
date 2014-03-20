@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <option name="DEFAULT_COMPILER" value="Javac" />
+    <resourceExtensions />
+    <wildcardResourcePatterns>
+      <entry name="!?*.java" />
+      <entry name="!?*.form" />
+      <entry name="!?*.class" />
+      <entry name="!?*.groovy" />
+      <entry name="!?*.scala" />
+      <entry name="!?*.flex" />
+      <entry name="!?*.kt" />
+      <entry name="!?*.clj" />
+    </wildcardResourcePatterns>
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="false">
+        <processorPath useClasspath="true" />
+      </profile>
+    </annotationProcessing>
+  </component>
+  <component name="CopyrightManager" default="" />
+  <component name="DependencyValidationManager">
+    <option name="SKIP_IMPORT_STATEMENTS" value="false" />
+  </component>
+  <component name="Encoding" useUTFGuessing="true" native2AsciiForPropertiesFiles="false" />
+  <component name="IdProvider" IDEtalkID="AA25AAD51CF7583F97AED7A9B3B3736D" />
+  <component name="JRebel Project data">
+    <option name="privateKey" value="3082025e02010002818100cd9d5b50d31a5f836c52ed36f3d74d96765910ea32254c1a3bc564a6dd2151c295715fe0da1d570a4dc6bf372ac79059e5ce660bb7b0f978afe24044c0c1382aeee81fe274b3ec6b8446135f7a2fa8c8c34325a49987a8d3b5eb333a0d1a6feb4a939c335552a0590e09b6582530a17ae536525d6cefdae8457b2ff22acfb743020301000102818057de6252c5146532fdcce690f05dd74b70a219676c2ca23c27c4f0819ac88d6f317c34f41b62247b43c7a699c5cf68f1f212656ba6819beb2686f2de2edda3c97889e4a89435b9acbb673c1a8a7f7e03299ab5e063c19df8a761c2cee3e768b2f0cae212b56d09c324b36ea3fb40dba1e419e7fb09dd70454c6991f3900feec9024100f7b59856e979a0200cacd465d164c7d2d6d04e990b980caf47c2a22a23a8ab9c5547b0f24cee5adfb8c753074e3a4077ddcf86d916e2daa24d97be9108a89e57024100d47f16cf62ea3ef6b261c6c057ab6bdf815bdb31ac89de64049e1cd7ccf0fd2b321e99ea72df5da17e136baa9e8eb2d027a914e837719c2fbb716b89923882f5024100b8664bf0af3fa66f15607781105ef8ce40b1b341053b7c7de36ac5b39ef60a4287cda5b0ca8a49c5efd51a3eff022849d32a9114fc8f85f87ad0b2c15ef3bf63024100d3ba5debfdcf113595bfbedd5f7d3a5ad4f5c58dd530fa1a064fd4c5613aadc72085452f498e2e28ff0a32b92a8b5cb7f30c91fc5f6220119f5eff9b6fca4711024100b3934cb5be8d5de046fddbbb8800177868ee9f4fc9dfee6384a8ba841779f32cc3df9baf5d92758592d4bb5b86edac6bdd019b3c2da4ecdf64139180bac3032e" />
+    <option name="publicKey" value="30818902818100cd9d5b50d31a5f836c52ed36f3d74d96765910ea32254c1a3bc564a6dd2151c295715fe0da1d570a4dc6bf372ac79059e5ce660bb7b0f978afe24044c0c1382aeee81fe274b3ec6b8446135f7a2fa8c8c34325a49987a8d3b5eb333a0d1a6feb4a939c335552a0590e09b6582530a17ae536525d6cefdae8457b2ff22acfb7430203010001" />
+  </component>
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/spring-data-monbodb.iml" filepath="$PROJECT_DIR$/spring-data-monbodb.iml" />
+    </modules>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_6" assert-keyword="true" jdk-15="true" project-jdk-name="1.7" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+  <component name="VcsDirectoryMappings">
+    <mapping directory="" vcs="" />
+  </component>
+</project>
+
