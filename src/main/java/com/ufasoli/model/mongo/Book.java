@@ -1,4 +1,4 @@
-package com.ufasoli.model;
+package com.ufasoli.model.mongo;
 
 import java.io.Serializable;
 import java.util.List;

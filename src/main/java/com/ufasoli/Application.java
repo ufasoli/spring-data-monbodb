@@ -3,6 +3,7 @@ package com.ufasoli;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.context.annotation.ComponentScan;
+import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
 /**
  * Created with IntelliJ IDEA.
@@ -17,6 +18,7 @@ import org.springframework.context.annotation.ComponentScan;
 // in the classpath and no datasource is defined
 @ComponentScan
 @EnableAutoConfiguration
+@EnableJpaRepositories
 public class Application {
 
     public static void main(String[] args){
