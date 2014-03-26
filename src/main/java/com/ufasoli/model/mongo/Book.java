@@ -1,5 +1,8 @@
 package com.ufasoli.model.mongo;
 
+import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.Document;
+
 import java.io.Serializable;
 import java.util.List;
 
@@ -9,8 +12,10 @@ import java.util.List;
  * Date: 21.03.2014
  * Time: 16:35
  */
+@Document(collection = "BOOKS")
 public class Book implements Serializable {
 
+    @Id
     private String isbn;
     private String title;
     private String shortDescription;

@@ -13,7 +13,7 @@ import java.io.Serializable;
  * Time: 16:46
  */
 @Entity
-@Table(name="ORDERS")
+@Table(name = "ORDERS")
 public class Order implements Serializable {
 
 
