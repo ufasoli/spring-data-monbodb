@@ -1,12 +1,17 @@
 package com.ufasoli.web.resources;
 
 import com.ufasoli.model.jpa.Customer;
+import com.ufasoli.model.jpa.Order;
+import com.ufasoli.model.mongo.OrderLocations;
 import com.ufasoli.repositories.jpa.CustomerRepository;
+import com.ufasoli.repositories.jpa.OrderRepository;
 import com.ufasoli.util.Message;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.*;
 import javax.servlet.http.HttpServletResponse;
+import java.util.Date;
+import java.util.HashMap;
 
 /**
  * Created with IntelliJ IDEA.
@@ -21,8 +26,14 @@ public class CustomerController {
     @Autowired
     private CustomerRepository customerRepository;
 
+    @Autowired
+    private OrderRepository orderRepository;
+
     @RequestMapping(method = RequestMethod.GET)
-    public Iterable<Customer> findAll(){ return customerRepository.findAll();  }
+    public Iterable<Customer> findAll(){
+
+
+        return customerRepository.findAll();  }
 
     @RequestMapping(method=RequestMethod.GET, value = "/{customerId}")
     public Customer find(@PathVariable("customerId")Long customerId){

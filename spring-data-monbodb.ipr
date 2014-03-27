@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AjcSettings">
+    <option name="ajcPath" value="C:\Users\ulf\.m2\repository\org\aspectj\aspectjtools\1.7.4\aspectjtools-1.7.4.jar" />
+    <option name="explicitAspectPath" value="true" />
+    <option name="delegateToJavac" value="true" />
+  </component>
   <component name="ArtifactManager">
     <artifact type="war" name="spring-data-monbodb:war">
       <output-path>$PROJECT_DIR$/target</output-path>
@@ -72,20 +77,22 @@
             <element id="library" level="project" name="Maven: org.springframework.boot:spring-boot-starter-data-mongodb:1.0.0.RC5" />
             <element id="library" level="project" name="Maven: org.mongodb:mongo-java-driver:2.11.4" />
             <element id="library" level="project" name="Maven: org.springframework.data:spring-data-mongodb:1.4.1.RELEASE" />
+            <element id="library" level="project" name="Maven: org.springframework.data:spring-data-mongodb-cross-store:1.4.1.RELEASE" />
+            <element id="library" level="project" name="Maven: cglib:cglib:2.2" />
+            <element id="library" level="project" name="Maven: asm:asm:3.1" />
+            <element id="library" level="project" name="Maven: org.hibernate.javax.persistence:hibernate-jpa-2.0-api:1.0.1.Final" />
             <element id="library" level="project" name="Maven: com.mysema.querydsl:querydsl-core:3.3.2" />
             <element id="library" level="project" name="Maven: com.google.guava:guava:13.0.1" />
             <element id="library" level="project" name="Maven: com.google.code.findbugs:jsr305:1.3.9" />
             <element id="library" level="project" name="Maven: com.mysema.commons:mysema-commons-lang:0.2.4" />
             <element id="library" level="project" name="Maven: com.mysema.querydsl:querydsl-mongodb:3.3.2" />
-            <element id="library" level="project" name="Maven: cglib:cglib:2.2.2" />
-            <element id="library" level="project" name="Maven: asm:asm:3.3.1" />
           </element>
         </element>
       </root>
     </artifact>
   </component>
   <component name="CompilerConfiguration">
-    <option name="DEFAULT_COMPILER" value="Javac" />
+    <option name="DEFAULT_COMPILER" value="ajc" />
     <resourceExtensions />
     <wildcardResourcePatterns>
       <entry name="!?*.java" />
@@ -309,26 +316,26 @@
         <root url="jar://$MAVEN_REPOSITORY$/aopalliance/aopalliance/1.0/aopalliance-1.0-sources.jar!/" />
       </SOURCES>
     </library>
-    <library name="Maven: asm:asm:3.3.1">
+    <library name="Maven: asm:asm:3.1">
       <CLASSES>
-        <root url="jar://$MAVEN_REPOSITORY$/asm/asm/3.3.1/asm-3.3.1.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/asm/asm/3.1/asm-3.1.jar!/" />
       </CLASSES>
       <JAVADOC>
-        <root url="jar://$MAVEN_REPOSITORY$/asm/asm/3.3.1/asm-3.3.1-javadoc.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/asm/asm/3.1/asm-3.1-javadoc.jar!/" />
       </JAVADOC>
       <SOURCES>
-        <root url="jar://$MAVEN_REPOSITORY$/asm/asm/3.3.1/asm-3.3.1-sources.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/asm/asm/3.1/asm-3.1-sources.jar!/" />
       </SOURCES>
     </library>
-    <library name="Maven: cglib:cglib:2.2.2">
+    <library name="Maven: cglib:cglib:2.2">
       <CLASSES>
-        <root url="jar://$MAVEN_REPOSITORY$/cglib/cglib/2.2.2/cglib-2.2.2.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/cglib/cglib/2.2/cglib-2.2.jar!/" />
       </CLASSES>
       <JAVADOC>
-        <root url="jar://$MAVEN_REPOSITORY$/cglib/cglib/2.2.2/cglib-2.2.2-javadoc.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/cglib/cglib/2.2/cglib-2.2-javadoc.jar!/" />
       </JAVADOC>
       <SOURCES>
-        <root url="jar://$MAVEN_REPOSITORY$/cglib/cglib/2.2.2/cglib-2.2.2-sources.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/cglib/cglib/2.2/cglib-2.2-sources.jar!/" />
       </SOURCES>
     </library>
     <library name="Maven: ch.qos.logback:logback-classic:1.1.1">
@@ -626,6 +633,17 @@
       </JAVADOC>
       <SOURCES>
         <root url="jar://$MAVEN_REPOSITORY$/org/hibernate/common/hibernate-commons-annotations/4.0.4.Final/hibernate-commons-annotations-4.0.4.Final-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.hibernate.javax.persistence:hibernate-jpa-2.0-api:1.0.1.Final">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/hibernate/javax/persistence/hibernate-jpa-2.0-api/1.0.1.Final/hibernate-jpa-2.0-api-1.0.1.Final.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/hibernate/javax/persistence/hibernate-jpa-2.0-api/1.0.1.Final/hibernate-jpa-2.0-api-1.0.1.Final-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/hibernate/javax/persistence/hibernate-jpa-2.0-api/1.0.1.Final/hibernate-jpa-2.0-api-1.0.1.Final-sources.jar!/" />
       </SOURCES>
     </library>
     <library name="Maven: org.hibernate.javax.persistence:hibernate-jpa-2.1-api:1.0.0.Final">
@@ -934,6 +952,17 @@
       </JAVADOC>
       <SOURCES>
         <root url="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-jpa/1.5.1.RELEASE/spring-data-jpa-1.5.1.RELEASE-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.springframework.data:spring-data-mongodb-cross-store:1.4.1.RELEASE">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-mongodb-cross-store/1.4.1.RELEASE/spring-data-mongodb-cross-store-1.4.1.RELEASE.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-mongodb-cross-store/1.4.1.RELEASE/spring-data-mongodb-cross-store-1.4.1.RELEASE-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-mongodb-cross-store/1.4.1.RELEASE/spring-data-mongodb-cross-store-1.4.1.RELEASE-sources.jar!/" />
       </SOURCES>
     </library>
     <library name="Maven: org.springframework.data:spring-data-mongodb:1.4.1.RELEASE">

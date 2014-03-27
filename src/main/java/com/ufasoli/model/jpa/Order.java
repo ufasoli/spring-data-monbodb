@@ -2,6 +2,8 @@ package com.ufasoli.model.jpa;
 
 import com.fasterxml.jackson.annotation.JsonBackReference;
 import com.fasterxml.jackson.annotation.JsonManagedReference;
+import com.ufasoli.model.mongo.OrderLocations;
+import org.springframework.data.mongodb.crossstore.RelatedDocument;
 
 import javax.persistence.*;
 import java.io.Serializable;
@@ -28,6 +30,10 @@ public class Order implements Serializable {
     @JsonBackReference
     private Customer customer;
 
+
+    @RelatedDocument
+    private OrderLocations orderLocations;
+
     public long getOrderId() {
         return orderId;
     }
@@ -50,5 +56,13 @@ public class Order implements Serializable {
 
     public void setCustomer(Customer customer) {
         this.customer = customer;
+    }
+
+    public OrderLocations getOrderLocations() {
+        return orderLocations;
+    }
+
+    public void setOrderLocations(OrderLocations orderLocations) {
+        this.orderLocations = orderLocations;
     }
 }

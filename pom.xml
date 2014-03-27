@@ -14,6 +14,8 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <hsqldb.version>2.2.8</hsqldb.version>
         <querydsl.version>3.3.2</querydsl.version>
+        <spring.data.mongodb.version>1.4.1.RELEASE</spring.data.mongodb.version>
+        <aspectj.version>1.7.4</aspectj.version>
     </properties>
 
     <parent>
@@ -53,7 +55,14 @@
         </dependency>
 
 
-         <!--QueryDSL -->
+        <dependency>
+            <groupId>org.springframework.data</groupId>
+            <artifactId>spring-data-mongodb-cross-store</artifactId>
+            <version>${spring.data.mongodb.version}</version>
+        </dependency>
+
+
+        <!--QueryDSL -->
         <dependency>
             <groupId>com.mysema.querydsl</groupId>
             <artifactId>querydsl-apt</artifactId>
@@ -123,8 +132,6 @@
                             <artifactId>querydsl-apt</artifactId>
                             <version>${querydsl.version}</version>
                         </dependency>
-
-
                 </dependencies>
                 <executions>
                     <execution>
@@ -139,6 +146,48 @@
                         </configuration>
                     </execution>
                 </executions>
+            </plugin>
+
+
+            <plugin>
+            <groupId>org.codehaus.mojo</groupId>
+            <artifactId>aspectj-maven-plugin</artifactId>
+            <version>1.0</version>
+            <dependencies>
+                <dependency>
+                    <groupId>org.aspectj</groupId>
+                    <artifactId>aspectjrt</artifactId>
+                    <version>${aspectj.version}</version>
+                </dependency>
+                <dependency>
+                    <groupId>org.aspectj</groupId>
+                    <artifactId>aspectjtools</artifactId>
+                    <version>${aspectj.version}</version>
+                </dependency>
+            </dependencies>
+            <executions>
+                <execution>
+                    <goals>
+                        <goal>compile</goal>
+                        <goal>test-compile</goal>
+                    </goals>
+                </execution>
+            </executions>
+                <configuration>
+                    <outxml>true</outxml>
+                    <aspectLibraries>
+                        <aspectLibrary>
+                            <groupId>org.springframework</groupId>
+                            <artifactId>spring-aspects</artifactId>
+                        </aspectLibrary>
+                        <aspectLibrary>
+                            <groupId>org.springframework.data</groupId>
+                            <artifactId>spring-data-mongodb-cross-store</artifactId>
+                        </aspectLibrary>
+                    </aspectLibraries>
+                    <source>1.7</source>
+                    <target>1.7</target>
+                </configuration>
             </plugin>
 
         </plugins>
