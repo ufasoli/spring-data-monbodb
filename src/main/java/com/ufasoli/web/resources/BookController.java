@@ -2,13 +2,13 @@ package com.ufasoli.web.resources;
 
 import com.mongodb.WriteResult;
 import com.ufasoli.model.mongo.Book;
+import com.ufasoli.model.mongo.QBook;
 import com.ufasoli.repositories.mongo.BookRepository;
 import com.ufasoli.util.Message;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpServletResponse;
-import java.util.Iterator;
 
 /**
  * User: Ulises Fasoli
@@ -23,10 +23,11 @@ public class BookController {
     @Autowired
     private BookRepository bookRepository;
 
+
+
     @RequestMapping(method = RequestMethod.GET)
     public Iterable<Book> findAll(){
-
-        return bookRepository.findAll();
+           return bookRepository.findAll();
     }
 
     @RequestMapping(method=RequestMethod.GET, value = "/{bookId}")
@@ -68,4 +69,11 @@ public class BookController {
     public WriteResult updateCustom(){
         return bookRepository.customUpdateBook();
     }
+
+
+    @RequestMapping(value = "/find-genre-by-dsl/{genre}", method = RequestMethod.GET)
+    public Iterable<Book> updateCustom(@PathVariable("genre") String genre){
+        return bookRepository.findAll(QBook.book.genre.eq(genre));
+    }
+
 }

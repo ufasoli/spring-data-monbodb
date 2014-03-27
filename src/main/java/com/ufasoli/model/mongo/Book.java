@@ -1,5 +1,6 @@
 package com.ufasoli.model.mongo;
 
+import com.mysema.query.annotations.QueryEntity;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
@@ -13,6 +14,7 @@ import java.util.List;
  * Time: 16:35
  */
 @Document(collection = "BOOKS")
+@QueryEntity
 public class Book implements Serializable {
 
     @Id
