@@ -1,27 +1,38 @@
 spring-data-monbodb
 ===================
 
-A sample application built progresively to demonstrate some of the following concepts :
+# I. Description
+
+A sample application built using spring-boot that progresively demonstrates some of the following concepts :
 
   * Spring Data JPA
   * Spring Data MongoDB
   * Spring Data & QueryDSL
   * Spring Data REST
   * Spring Data Cross-store
+  * Spring boot with the starter modules  :
+      * Spring-data-jpa
+      * Spring-data-mongodb
+      * Spring-data-rest
+      * Spring web
   
-This application uses Spring-boot with it's appropriate starter modules.
 
+
+
+# II. Running
 The app consists of 6 branches (demo-1 to demo-6) each branch adding some extra functionality to the project.
 
 In order to run the application just checkout a branch (demo-1 to demo-6) and issue the following command :
 
-  mvn spring-boot:run
+```bash
+mvn spring-boot:run
+```
   
   
 This will start and embedded tomcat server running on port 8080.
 
 
-
+# III. Requirements
 
 
 Please note that starting from demo-2 you will need a MongoDB instance running on your local machine for 
