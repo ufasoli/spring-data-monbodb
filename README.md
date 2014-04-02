@@ -1,7 +1,7 @@
-spring-data-monbodb
+Spring boot / Spring data (MongoDB and JPA) sample application
 ===================
 
-# I. Description
+## I. Description
 
 A sample application built using spring-boot that progresively demonstrates some of the following concepts :
 
@@ -19,7 +19,7 @@ A sample application built using spring-boot that progresively demonstrates some
 
 
 
-# II. Running
+## II. Running
 The app consists of 6 branches (demo-1 to demo-6) each branch adding some extra functionality to the project.
 
 In order to run the application just checkout a branch (demo-1 to demo-6) and issue the following command :
@@ -32,7 +32,7 @@ mvn spring-boot:run
 This will start and embedded tomcat server running on port 8080.
 
 
-# III. Requirements
+## III. Requirements
 
 
 Please note that starting from demo-2 you will need a MongoDB instance running on your local machine for 
